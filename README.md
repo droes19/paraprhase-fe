@@ -77,10 +77,23 @@ npm test -- --coverage
 
 ## Configuration
 
-By default, the frontend is configured to communicate with the backend at `http://localhost:8080`. If you need to change this:
+By default, the frontend is configured to communicate with the backend at `http://localhost:8080`. You can configure the API base URL using environment variables:
 
-1. Open `src/services/api.ts`
-2. Update the `API_BASE_URL` constant to point to your backend
+### Using Environment Variables
+
+1. Create a `.env` file in the project root (you can copy from `.env.example`):
+   ```
+   cp .env.example .env
+   ```
+
+2. Edit the `.env` file to set your backend API URL:
+   ```
+   REACT_APP_API_BASE_URL=https://your-api-server.com
+   ```
+
+3. Restart the development server for changes to take effect.
+
+For production deployments, set the environment variables in your hosting platform (Vercel, Netlify, etc.).
 
 ## Deployment
 

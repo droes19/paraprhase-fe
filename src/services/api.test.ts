@@ -21,7 +21,7 @@ describe('API Service', () => {
 
     // Check the fetch call
     expect(mockFetch).toHaveBeenCalledWith(
-      expect.stringContaining('/api/paraphrase'),
+      expect.stringMatching(/^.+\/api\/paraphrase$/),
       expect.objectContaining({
         method: 'POST',
         headers: expect.objectContaining({
