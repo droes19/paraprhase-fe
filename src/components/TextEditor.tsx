@@ -78,8 +78,8 @@ const TextEditor: React.FC = () => {
                 </button>
                 {selection ? (
                     <span className="selection-info">
-                        Selected: "{text.substring(selection.start, selection.end).slice(0, 30)}
-                        {text.substring(selection.start, selection.end).length > 30 ? '...' : ''}"
+                        Selected: "{text.substring(selection.start, selection.end).slice(0, 20)}
+                        {text.substring(selection.start, selection.end).length > 20 ? '...' : ''}"
                     </span>
                 ) : (
                     <span className="selection-hint">Select text to paraphrase</span>

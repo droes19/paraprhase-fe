@@ -94,9 +94,9 @@ The frontend is currently deployed on Vercel at [https://paraprhase-fe.vercel.ap
 - ✅ Integration with backend API for paraphrasing
 - ✅ Mechanism to replace selected text with paraphrased content
 - ✅ Deployment to Vercel
+- ✅ Responsive design for mobile devices
 
 ### In Progress
-- 🔄 Responsive design for mobile devices
 - 🔄 Improved visual feedback during paraphrasing
 - 🔄 Unit tests for components
 
