@@ -23,13 +23,13 @@ export const paraphraseText = async (text: string): Promise<string> => {
 
     if (!response.ok) {
       const errorData = await response.json().catch(() => ({}));
-      throw new Error(errorData.message || `Error: ${response.status}`);
+      throw new Error(errorData.message || `${response.status}`);
     }
 
     const data = await response.json();
     return data.paraphrasedText;
   } catch (error) {
-    console.error('API Error:', error);
+    // Re-throw for caller to handle
     throw error;
   }
 };

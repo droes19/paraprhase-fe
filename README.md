@@ -55,6 +55,18 @@ frontend/
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+### Testing
+
+Run the test suite:
+```
+npm test
+```
+
+Run tests with coverage report:
+```
+npm test -- --coverage
+```
+
 ## Usage
 
 1. Type or paste text into the editor
@@ -95,10 +107,10 @@ The frontend is currently deployed on Vercel at [https://paraprhase-fe.vercel.ap
 - ✅ Mechanism to replace selected text with paraphrased content
 - ✅ Deployment to Vercel
 - ✅ Responsive design for mobile devices
+- ✅ Unit tests for components and services
 
 ### In Progress
 - 🔄 Improved visual feedback during paraphrasing
-- 🔄 Unit tests for components
 
 ### Planned
 - 📝 Loading state animations

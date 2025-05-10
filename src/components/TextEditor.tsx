@@ -24,10 +24,8 @@ const TextEditor: React.FC = () => {
         
         // If we have a valid selection range
         if (start !== end) {
-            console.log("Selection detected:", start, end);
             setSelection({ start, end });
         } else {
-            console.log("No selection");
             setSelection(null);
         }
     };
@@ -49,7 +47,7 @@ const TextEditor: React.FC = () => {
             setText(newText);
             setSelection(null);
         } catch (error) {
-            console.error('Error paraphrasing text:', error);
+            // Handle errors gracefully
             alert('Failed to paraphrase text. Please try again.');
         } finally {
             setIsLoading(false);
