@@ -2,6 +2,8 @@
 
 The React frontend for the Paraphrase application, a text paraphrasing tool.
 
+**Live Demo:** [https://paraprhase-fe.vercel.app/](https://paraprhase-fe.vercel.app/)
+
 ## Features
 
 - Clean text editor interface for typing or pasting text
@@ -68,6 +70,21 @@ By default, the frontend is configured to communicate with the backend at `http:
 1. Open `src/services/api.ts`
 2. Update the `API_BASE_URL` constant to point to your backend
 
+## Deployment
+
+The frontend is currently deployed on Vercel at [https://paraprhase-fe.vercel.app/](https://paraprhase-fe.vercel.app/).
+
+### Deploying to Vercel
+
+1. Fork or clone this repository
+2. Connect your GitHub repository to Vercel
+3. Configure the following settings:
+   - Framework preset: Create React App
+   - Build command: `npm run build`
+   - Output directory: `build`
+4. Add environment variables if needed (for custom API endpoints)
+5. Deploy!
+
 ## Development Progress
 
 ### Completed
@@ -76,6 +93,7 @@ By default, the frontend is configured to communicate with the backend at `http:
 - ✅ Button UI that enables when text is selected
 - ✅ Integration with backend API for paraphrasing
 - ✅ Mechanism to replace selected text with paraphrased content
+- ✅ Deployment to Vercel
 
 ### In Progress
 - 🔄 Responsive design for mobile devices
